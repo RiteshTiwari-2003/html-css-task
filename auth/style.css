@@ -150,7 +150,8 @@ body {
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.3);
 }
 
-.right-container {
+/* Login page right container style */
+.login-right {
     color: white;
     text-align: center;
     background: linear-gradient(135deg, rgba(26, 26, 46, 0.9), rgba(50, 50, 80, 0.9));
@@ -159,7 +160,7 @@ body {
     border-left: 1px solid rgba(255, 215, 0, 0.2);
 }
 
-.right-container::before {
+.login-right::before {
     content: '';
     position: absolute;
     top: 0;
@@ -170,10 +171,32 @@ body {
     pointer-events: none;
 }
 
+/* Signup page right container style */
+.signup-right {
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(76, 43, 88, 0.9), rgba(35, 38, 113, 0.9));
+    position: relative;
+    overflow: hidden;
+    border-left: 1px solid rgba(147, 112, 219, 0.2);
+}
+
+.signup-right::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(147, 112, 219, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Common styles for both */
 .right-container .content {
     max-width: 400px;
     padding: 2rem;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
     backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.05);
