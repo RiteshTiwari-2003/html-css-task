@@ -63,12 +63,12 @@ body {
     position: relative;
 }
 
-.signup-mode .fourth {
-    background-color: #4CAF50;  /* Green for signup */
-}
-
 .login-mode .fourth {
     background-color: #f44336;  /* Red for login */
+}
+
+.signup-mode .fourth {
+    background-color: #4CAF50;  /* Green for signup */
 }
 
 .fifth {
@@ -100,19 +100,22 @@ body {
     opacity: 0.15;
 }
 
+.login-mode .fifth::before {
+    background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600');
+}
+
 .signup-mode .fifth::before {
     background-image: url('https://images.unsplash.com/photo-1476842634003-7dcca8f832de?w=600');
 }
 
-.login-mode .fifth::before {
-    background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600');
+.fifth .content-text {
+    position: relative;
+    z-index: 1;
 }
 
 .fifth .content-text h2,
 .fifth .content-text p {
     color: #fff;
-    position: relative;
-    z-index: 1;
 }
 
 .fifth .btn-secondary {
@@ -126,6 +129,34 @@ body {
     border-color: #f9bb2a;
     background-color: #f9bb2a;
     color: #2a2a48;
+}
+
+.fourth .form-container {
+    z-index: 1;
+    width: 100%;
+    max-width: 320px;
+}
+
+.fourth .form-container input {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.fourth .form-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.fourth .btn-primary {
+    background-color: #fff;
+    color: inherit;
+    border: none;
+}
+
+.fourth .btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
 .form-container {
@@ -148,7 +179,7 @@ body {
 .form-container input {
     padding: 16px 25px;
     border-radius: 30px;
-    border: 2px solid #f9bb2a;  /* Yellow border for inputs */
+    border: 2px solid #f9bb2a;  
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     color: white;
@@ -158,7 +189,7 @@ body {
 
 .form-container input:focus {
     background-color: rgba(255, 255, 255, 0.15);
-    border-color: #4CAF50;  /* Green border on focus */
+    border-color: #4CAF50;  
     outline: none;
     box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
 }
@@ -251,12 +282,12 @@ body {
 .content-text h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #000;  /* Changed to black */
+    color: #000;  
     font-weight: 600;
 }
 
 .content-text p {
-    color: #000;  /* Changed to black */
+    color: #000;  
     margin-bottom: 30px;
     line-height: 1.6;
     font-size: 16px;
