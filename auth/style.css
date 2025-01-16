@@ -64,11 +64,11 @@ body {
 }
 
 .login-mode .fourth {
-    background-color: #dc20b9;  /* Red for login */
+    background-color: #dc20b9;  
 }
 
 .signup-mode .fourth {
-    background-color: #2275c3;  /* Green for signup */
+    background-color: #2275c3;  
 }
 
 .fifth {
