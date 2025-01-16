@@ -101,11 +101,11 @@ body {
 }
 
 .login-mode .fifth::before {
-    background-image: url('https://i.pinimg.com/736x/d0/20/fc/d020fc7ba9754f48cf7da1db5e2d34bd.jpg');
+    background-image: url('https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg');
 }
 
 .signup-mode .fifth::before {
-    background-image: url('https://wallpapers.com/images/high/digital-poster-dhoni-hd-ie7hsw6yfaeupvvm.webp');
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/011/635/825/small/abstract-square-interface-modern-background-concept-fingerprint-digital-scanning-visual-security-system-authentication-login-vector.jpg');
 }
 
 .fifth .content-text {
@@ -171,7 +171,7 @@ body {
 .form-container h2 {
     text-align: center;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -244,34 +244,52 @@ body {
 }
 
 .btn-secondary {
-    background-color: transparent;
-    border: 2px solid #f9bb2a;
-    color: #f9bb2a;
-    margin-top: 20px;
+    border: 2px solid #fff;
+    color: #fff;
     position: relative;
-    overflow: hidden;
     z-index: 1;
-}
-
-.btn-secondary:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #f9bb2a;
+    padding: 16px 40px;
+    font-size: 22px;  
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;  
+    align-items: center;   
+    justify-content: center; 
+    min-width: 160px;     
+    text-align: center;
     transition: all 0.3s ease;
-    z-index: -1;
 }
 
 .btn-secondary:hover {
-    color: #fff;
+    border-color: #f9bb2a;
+    background-color: #f9bb2a;
+    color: #2a2a48;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(249, 187, 42, 0.3);
 }
 
-.btn-secondary:hover:before {
-    width: 100%;
+.btn-primary {
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    padding: 16px 40px;
+    font-size: 22px;  
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-flex;  
+    align-items: center;   
+    justify-content: center; 
+    min-width: 160px;     
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
 .content-text {
@@ -280,7 +298,7 @@ body {
 }
 
 .content-text h2 {
-    font-size: 36px;
+    font-size: 47px;
     margin-bottom: 20px;
     color: #000;  
     font-weight: 600;
@@ -290,7 +308,7 @@ body {
     color: #000;  
     margin-bottom: 30px;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 500;
 }
 
