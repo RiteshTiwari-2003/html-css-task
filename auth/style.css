@@ -64,11 +64,11 @@ body {
 }
 
 .login-mode .fourth {
-    background-color: #f44336;  /* Red for login */
+    background-color: #dc20b9;  /* Red for login */
 }
 
 .signup-mode .fourth {
-    background-color: #4CAF50;  /* Green for signup */
+    background-color: #2275c3;  /* Green for signup */
 }
 
 .fifth {
@@ -312,32 +312,39 @@ body {
     font-weight: 500;
 }
 
-/* Input group styling */
+/* Input group styling with larger fonts */
 .input-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;  /* Increased margin for better spacing */
     width: 100%;
 }
 
 .input-group i {
     position: absolute;
-    left: 15px;
+    left: 20px;  /* Moved icon slightly right */
     top: 50%;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.7);
-    font-size: 16px;
+    font-size: 20px;  /* Increased icon size */
     z-index: 2;
 }
 
 .input-group input {
-    padding: 16px 25px 16px 45px !important;
+    padding: 18px 25px 18px 50px !important;  /* Increased padding for larger input */
     border-radius: 30px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
     color: white;
-    font-size: 15px;
+    font-size: 18px;  /* Increased font size */
+    font-weight: 500;  /* Added font weight */
     transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;  /* Increased placeholder font size */
+    font-weight: 400;  /* Slightly lighter weight for placeholder */
 }
 
 .input-group input:focus {
@@ -350,8 +357,80 @@ body {
     color: #f9bb2a;
 }
 
+/* Login form specific colors */
+.login-mode .input-group:nth-child(1) input {
+    color: #00ffff;  /* Cyan */
+}
+
+.login-mode .input-group:nth-child(2) input {
+    color: #ff9966;  /* Peach */
+}
+
+/* Signup form specific colors */
+.signup-mode .input-group:nth-child(1) input {
+    color: #66ff66;  /* Light green */
+}
+
+.signup-mode .input-group:nth-child(2) input {
+    color: #ff99cc;  /* Pink */
+}
+
+.signup-mode .input-group:nth-child(3) input {
+    color: #ffff66;  /* Light yellow */
+}
+
+.signup-mode .input-group:nth-child(4) input {
+    color: #99ccff;  /* Light blue */
+}
+
+.signup-mode .input-group:nth-child(5) input {
+    color: #ff99ff;  /* Light purple */
+}
+
+/* Icon colors to match input colors */
+.login-mode .input-group:nth-child(1) i {
+    color: #00ffff;
+}
+
+.login-mode .input-group:nth-child(2) i {
+    color: #ff9966;
+}
+
+.signup-mode .input-group:nth-child(1) i {
+    color: #66ff66;
+}
+
+.signup-mode .input-group:nth-child(2) i {
+    color: #ff99cc;
+}
+
+.signup-mode .input-group:nth-child(3) i {
+    color: #ffff66;
+}
+
+.signup-mode .input-group:nth-child(4) i {
+    color: #99ccff;
+}
+
+.signup-mode .input-group:nth-child(5) i {
+    color: #ff99ff;
+}
+
+/* Make placeholder text slightly darker for better readability */
 .input-group input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.7;
+}
+
+/* Focus effects - brighten the colors */
+.input-group input:focus {
+    border-color: #f9bb2a;
+    outline: none;
+    box-shadow: 0 0 15px rgba(249, 187, 42, 0.3);
+    filter: brightness(1.2);
+}
+
+.input-group input:focus + i {
+    filter: brightness(1.2);
 }
 
 @media (max-width: 1200px) {
