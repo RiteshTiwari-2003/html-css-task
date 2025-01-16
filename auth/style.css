@@ -101,11 +101,11 @@ body {
 }
 
 .login-mode .fifth::before {
-    background-image: url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?w=600');
+    background-image: url('https://i.pinimg.com/736x/d0/20/fc/d020fc7ba9754f48cf7da1db5e2d34bd.jpg');
 }
 
 .signup-mode .fifth::before {
-    background-image: url('https://images.unsplash.com/photo-1476842634003-7dcca8f832de?w=600');
+    background-image: url('https://wallpapers.com/images/high/digital-poster-dhoni-hd-ie7hsw6yfaeupvvm.webp');
 }
 
 .fifth .content-text {
