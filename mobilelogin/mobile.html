@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -24,11 +25,50 @@
             position: relative;
             overflow: hidden;
         }
+
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .time {
+            font-weight: bold;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .content-container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 50px; /* Space for status bar */
+            background-color: #ffffff; /* Slightly lighter blue */
+            
+            height: calc(100% - 50px);
+        }
     </style>
 </head>
 <body>
     <div class="mobile-container">
-        <!-- Content will go here -->
+        <div class="status-bar">
+            <div class="time">9:00</div>
+            <div class="icons">
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        <div class="content-container">
+            <!-- Content will go here -->
+        </div>
     </div>
 </body>
 </html>
