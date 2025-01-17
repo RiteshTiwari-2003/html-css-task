@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Login</title>
+    <title>Mobile Sign Up</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -18,9 +18,9 @@
         }
 
         .mobile-container {
-            width: 375px; /* Standard mobile width */
-            height: 800px; /* Standard mobile height (iPhone 8) */
-            background-color: #00008B; /* Dark blue color */
+            width: 375px;
+            height: 800px;
+            background-color: #00008B;
             border-radius: 30px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
             position: relative;
@@ -36,21 +36,12 @@
             font-family: Arial, sans-serif;
         }
 
-        .time {
-            font-weight: bold;
-        }
-
-        .icons {
-            display: flex;
-            gap: 10px;
-        }
-
         .content-container {
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
-            top: 50px; /* Space for status bar */
+            top: 50px;
             background-color: #ffffff;
             height: calc(100% - 50px);
             padding: 15px;
@@ -63,23 +54,24 @@
             max-width: 200px;
             margin: 0 auto;
         }
+
         .image-container img {
             width: 100%;
             height: auto;
         }
 
-        .login-content {
+        .signup-content {
             padding: 10px;
             margin-top: 10px;
         }
 
-        .login-content h1 {
-            color: #333;
+        .signup-content h1 {
+            color: #2D8B7E;
             font-size: 22px;
             margin-bottom: 5px;
         }
 
-        .login-content p {
+        .signup-content p {
             color: #666;
             font-size: 13px;
             margin-bottom: 20px;
@@ -87,7 +79,7 @@
 
         .input-field {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 8px 0;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -110,26 +102,15 @@
             cursor: pointer;
         }
 
-        .forgot-password {
-            text-align: right;
-            margin: 8px 0;
-        }
-
-        .forgot-password a {
-            color: #666;
-            text-decoration: none;
-            font-size: 11px;
-        }
-
-        .sign-in-btn {
+        .signup-btn {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             background-color: #2D8B7E;
             color: white;
             border: none;
             border-radius: 8px;
-            font-size: 14px;
-            margin: 12px 0;
+            font-size: 16px;
+            margin: 15px 0;
             cursor: pointer;
         }
 
@@ -168,11 +149,16 @@
             letter-spacing: 0.25px;
         }
 
-        .signup-link {
+        .login-link {
             margin-top: 12px;
             font-size: 11px;
             color: #666;
             padding-bottom: 10px;
+        }
+
+        .login-link a {
+            color: #2D8B7E;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -190,26 +176,28 @@
             <div class="image-container">
                 <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" alt="Security Illustration">
             </div>
-            <div class="login-content">
-                <h1>Welcome back!</h1>
-                <p>Let's login for explore continues</p>
+            <div class="signup-content">
+                <h1>Let's Get Started</h1>
+                <p>Create an account to get all features</p>
+                <input type="text" class="input-field" placeholder="Enter your full name">
                 <input type="email" class="input-field" placeholder="Enter your email">
                 <div class="password-container">
-                    <input type="password" class="input-field" placeholder="••••••••">
+                    <input type="password" class="input-field" placeholder="Password">
                     <i class="far fa-eye"></i>
                 </div>
-                <div class="forgot-password">
-                    <a href="reset-password.html">Forgot password?</a>
+                <div class="password-container">
+                    <input type="password" class="input-field" placeholder="Confirm password">
+                    <i class="far fa-eye"></i>
                 </div>
-                <button class="sign-in-btn">Sign In</button>
+                <button class="signup-btn">Sign Up</button>
                 <div class="google-container">
                     <button class="google-btn">
                         <i class="fab fa-google"></i>
                         <span>Sign Up with Google</span>
                     </button>
                 </div>
-                <div class="signup-link">
-                    Don't have an account? <a href="signup.html">Sign Up here</a>
+                <div class="login-link">
+                    Already have an account? <a href="mobile.html">Sign In</a>
                 </div>
             </div>
         </div>
