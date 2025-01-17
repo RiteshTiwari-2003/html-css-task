@@ -357,34 +357,34 @@ body {
     color: #f9bb2a;
 }
 
-/* Login form specific colors */
+
 .login-mode .input-group:nth-child(1) input {
-    color: #00ffff;  /* Cyan */
+    color: #ffff66;  
 }
 
 .login-mode .input-group:nth-child(2) input {
-    color: #ff9966;  /* Peach */
+    color: #ffff66; 
 }
 
-/* Signup form specific colors */
+
 .signup-mode .input-group:nth-child(1) input {
-    color: #66ff66;  /* Light green */
+    color: #ffff66;  
 }
 
 .signup-mode .input-group:nth-child(2) input {
-    color: #ff99cc;  /* Pink */
+    color: #ffff66;  
 }
 
 .signup-mode .input-group:nth-child(3) input {
-    color: #ffff66;  /* Light yellow */
+    color: #ffff66;  
 }
 
 .signup-mode .input-group:nth-child(4) input {
-    color: #99ccff;  /* Light blue */
+    color: #ffff66; 
 }
 
 .signup-mode .input-group:nth-child(5) input {
-    color: #ff99ff;  /* Light purple */
+    color: #ffff66;  
 }
 
 /* Icon colors to match input colors */
