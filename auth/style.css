@@ -357,62 +357,19 @@ body {
     color: #f9bb2a;
 }
 
+.login-mode .input-group input {
+    color: #09b9f4;  
+}
 
-.login-mode .input-group:nth-child(1) input {
+.signup-mode .input-group input {
     color: #ffff66;  
 }
 
-.login-mode .input-group:nth-child(2) input {
-    color: #ffff66; 
-}
-
-
-.signup-mode .input-group:nth-child(1) input {
-    color: #ffff66;  
-}
-
-.signup-mode .input-group:nth-child(2) input {
-    color: #ffff66;  
-}
-
-.signup-mode .input-group:nth-child(3) input {
-    color: #ffff66;  
-}
-
-.signup-mode .input-group:nth-child(4) input {
-    color: #ffff66; 
-}
-
-.signup-mode .input-group:nth-child(5) input {
-    color: #ffff66;  
-}
-
-/* Icon colors to match input colors */
-.login-mode .input-group:nth-child(1) i {
+.login-mode .input-group i {
     color: #00ffff;
 }
 
-.login-mode .input-group:nth-child(2) i {
-    color: #ff9966;
-}
-
-.signup-mode .input-group:nth-child(1) i {
-    color: #66ff66;
-}
-
-.signup-mode .input-group:nth-child(2) i {
-    color: #ff99cc;
-}
-
-.signup-mode .input-group:nth-child(3) i {
-    color: #ffff66;
-}
-
-.signup-mode .input-group:nth-child(4) i {
-    color: #99ccff;
-}
-
-.signup-mode .input-group:nth-child(5) i {
+.signup-mode .input-group i {
     color: #ff99ff;
 }
 
