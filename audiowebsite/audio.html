@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player design - easy tutorial</title>
     <link rel="stylesheet" href="audio.css">
+    <script src="https://kit.fontawesome.com/fc392bc5cb.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -49,6 +50,13 @@
                 ctrlIcon.classList.remoe("fa-play");
                 ctrlIcon.classList.add("fa-pause");
             }
+        }
+        if (song.play()){
+            setInterval(()=>{
+                progress.value=song.currentTime;
+
+            },500);
+
         }
     </script>
 </body>
