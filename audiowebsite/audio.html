@@ -24,7 +24,7 @@
             <input type="range" value="0" id="progress">
             <div class="control">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div onclick=""><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
 
@@ -33,7 +33,11 @@
     <script>
         let progress=document.getElementById("progress");
         let song=document.getElementById("song");
-        let ctrlIcon=document.getElementById("")
+        let ctrlIcon=document.getElementById("ctrlIcon");
+        song.onloadedmetadata=function(){
+            progress.max=song.duration;
+            progress.value=song.currentTime;
+        }
     </script>
 </body>
 </html>
