@@ -3,26 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Enhanced Image Gallery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
-        <h1>Welcome to Image Gallery</h1>
-        <div class="image-container">
-            <a href="gallery.html" class="image-box">
-                <img src="https://picsum.photos/400/300?random=1" alt="Nature Image">
-                <div class="image-title">Nature Gallery</div>
-            </a>
-            <a href="gallery.html" class="image-box">
-                <img src="https://picsum.photos/400/300?random=2" alt="City Image">
-                <div class="image-title">City Gallery</div>
-            </a>
-            <a href="gallery.html" class="image-box">
-                <img src="https://picsum.photos/400/300?random=3" alt="Abstract Image">
-                <div class="image-title">Abstract Gallery</div>
-            </a>
-        </div>
+    <div class="page-wrapper">
+        <header class="main-header">
+            <h1 class="title">Stunning Image Gallery</h1>
+            <p class="subtitle">Click on any image to view the full gallery</p>
+        </header>
+        
+        <main class="main-container">
+            <div class="featured-images">
+                <a href="gallery.html" class="image-card">
+                    <div class="image-wrapper">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Nature Image">
+                    </div>
+                    <div class="image-overlay">
+                        <h3>Nature Collection</h3>
+                        <p>Explore beautiful landscapes</p>
+                    </div>
+                </a>
+                
+                <a href="gallery.html" class="image-card">
+                    <div class="image-wrapper">
+                        <img src="https://picsum.photos/400/300?random=2" alt="City Image">
+                    </div>
+                    <div class="image-overlay">
+                        <h3>Urban Views</h3>
+                        <p>Discover city life</p>
+                    </div>
+                </a>
+                
+                <a href="gallery.html" class="image-card">
+                    <div class="image-wrapper">
+                        <img src="https://picsum.photos/400/300?random=3" alt="Abstract Image">
+                    </div>
+                    <div class="image-overlay">
+                        <h3>Abstract Art</h3>
+                        <p>Experience creativity</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        
+        <footer class="main-footer">
+            <p>&copy; 2025 Image Gallery. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
