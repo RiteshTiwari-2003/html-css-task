@@ -1,1 +1,1 @@
-console.log("r/place");
+var canvas=document.querySelector('canvas');
