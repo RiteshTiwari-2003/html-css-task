@@ -25,19 +25,20 @@ body {
 
 /* Layout */
 .page-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Styles */
 .main-header {
     text-align: center;
-    padding: 2rem 1rem;
-    margin-bottom: 3rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: var(--border-radius);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .title {
@@ -57,42 +58,35 @@ body {
 /* Featured Images (Home Page) */
 .featured-images {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    gap: 0;
 }
 
 .image-card {
+    flex: 1;
+    margin: 0;
     position: relative;
-    width: 350px;
-    height: 250px;
-    border-radius: var(--border-radius);
     overflow: hidden;
-    text-decoration: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 .image-wrapper {
     width: 100%;
-    height: 100%;
+    height: 500px;
+    overflow: hidden;
 }
 
 .image-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    display: block;
 }
 
-.image-card:hover .image-wrapper img {
-    transform: scale(1.1);
+.image-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
 
 .image-overlay {
@@ -113,6 +107,12 @@ body {
 .image-overlay p {
     font-size: 1rem;
     opacity: 0.9;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 /* Gallery Grid (Gallery Page) */
