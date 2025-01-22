@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+    min-height: 200vh;
+}
+
+/* Common styles for all boxes */
+.static-box,
+.relative-box,
+.absolute-box,
+.fixed-box,
+.sticky-box {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 200px;
+}
+
+/* Static positioning (default) */
+.static-box {
+    background-color: #3498db;
+    /* position: static is default, no need to specify */
+}
+
+/* Relative positioning */
+.relative-box {
+    position: relative;
+    background-color: #2ecc71;
+    left: 50px;
+    top: 20px;
+}
+
+/* Absolute positioning */
+.absolute-box {
+    position: absolute;
+    background-color: #e74c3c;
+    width: 150px;
+    top: 0;
+    right: -100px;
+}
+
+/* Fixed positioning */
+.fixed-box {
+    position: fixed;
+    background-color: #9b59b6;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Sticky positioning */
+.sticky-box {
+    position: sticky;
+    background-color: #f1c40f;
+    color: #333;
+    top: 20px;
+}
+
+/* Content styling */
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #666;
+}
