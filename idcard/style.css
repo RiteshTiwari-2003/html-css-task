@@ -112,7 +112,7 @@ h2 span{
 
 .subtitle {
     color: #666;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -205,7 +205,7 @@ h2 span{
     width: 70px;
     height: 70px;
     background: #fff;
-    border: 2px solid #ff1744;
+  
     border-radius: 50%;
     margin: 0 20px 15px 25px;
     margin-bottom: 25px;
@@ -214,8 +214,8 @@ h2 span{
     
 }
 .logo-circle img{
-    width: 120%;
-    height: 120%;
+    width: 110%;
+    height: 110%;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -244,9 +244,9 @@ h2 span{
 }
 
 .dot {
-    width: 15px;
-    height: 15px;
-    background: #ff1744;
+    width: 10px;
+    height: 10px;
+    background: black;
     border-radius: 50%;
     flex-shrink: 0;
     box-shadow: 0 2px 5px rgba(255, 23, 68, 0.3);
