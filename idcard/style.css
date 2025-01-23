@@ -57,7 +57,7 @@ body {
     right: 0;
     width: 70%;
     height: 100%;
-    background: #fc2f29;
+    background: #19c10a;
     border-radius: 0 0 0 100%;
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -75,13 +75,17 @@ body {
     height: 150px;
     background: white;
     border-radius: 50%;
-    position: relative;
+    position:relative;
     overflow: hidden;
     border: 5px solid white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .profile-circle img {
+    
+
+    
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -125,34 +129,24 @@ h2 span{
 }
 
 .details {
-    margin-top: 30px;
-    padding: 2px;
+    
+    padding:0 5px;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    margin: 20px 10px;
+    margin: 10px 35px;
     
 }
 
-.details .third {
-    margin:0 52px 0 10px;
-}
 
-.details .second {
-    margin:0 35px 0 0;
-}
 
-.details .first {
-    margin:0 90px 0 0;
-}
-
-/* .details table {
+ .details table {
     width: 100%;
     text-align: left;
-    border-spacing: 0 8px;
-    margin: 0 auto;
+    
+   
 }
-
+/*
 .details td {
     padding: 1px 0;
     color: #333;
@@ -178,7 +172,7 @@ h2 span{
 .bottom-curve {
     position: absolute;
     
-    bottom: -150px;
+    bottom: -180px;
     left: 60px;
     width: 100%;
     height: 50%;
@@ -194,7 +188,7 @@ h2 span{
     left: 40px;
     width: 70%;
     height: 100%;
-    background: #fc2f29;
+    background: #19c10a;
     border-radius:100% 100% 0 0 ;
     box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -208,18 +202,20 @@ h2 span{
 }
 
 .logo-circle {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: #fff;
     border: 2px solid #ff1744;
     border-radius: 50%;
-    margin: 0 auto 15px;
+    margin: 0 20px 15px 25px;
+    margin-bottom: 25px;
+    margin-left:129px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     
 }
 .logo-circle img{
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -264,7 +260,7 @@ h2 span{
 
 .signature {
     position: absolute;
-    bottom: 80px;
+    bottom: 60px;
     left: 30px;
     color: #333;
     font-style: italic;
