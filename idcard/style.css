@@ -44,8 +44,13 @@ body {
     top: 0;
     right: 0;
     width: 100%;
-    height: 45%;
+    height: 40%;
     background: black;
+    border: solid 6px #e5e55a;
+    border-top-style: none;
+    border-right-style: none;
+
+    outline-color: none;
     border-radius: 0 0 0 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -59,20 +64,20 @@ body {
     height: 100%;
     background: #19c10a;
     border-radius: 0 0 0 100%;
-    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -3px 3px 5px white;
 }
 
 .circle-container {
     position: absolute;
-    top: 50px;
+    top: 67px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
 }
 
 .profile-circle {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background: white;
     border-radius: 50%;
     position:relative;
@@ -131,10 +136,13 @@ h2 span{
 .details {
     
     padding:0 5px;
+    
     background: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    margin: 10px 35px;
+    margin-top: 10px;
+    margin-left: 49px;
+    margin-right: 20px;
     
 }
 
@@ -172,11 +180,12 @@ h2 span{
 .bottom-curve {
     position: absolute;
     
-    bottom: -180px;
-    left: 60px;
+    bottom: -140px;
+    left: 90px;
     width: 100%;
-    height: 50%;
+    height: 40%;
     background: black;
+    border: solid 6px #e5e55a;
     border-radius:100% 100% 0 0 ;
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -184,13 +193,13 @@ h2 span{
 .bottom-curve::after {
     content: '';
     position: absolute;
-    bottom: -20px;
-    left: 40px;
+    bottom: -22px;
+    left: 50px;
     width: 70%;
     height: 100%;
     background: #19c10a;
     border-radius:100% 100% 0 0 ;
-    box-shadow: 5px -5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px -2px 4px white;;
 }
 
 /* Back side styling */
@@ -233,6 +242,7 @@ h2 span{
 .info-points {
     position: relative;
     padding: 40px 30px;
+    margin-left: 20px;
     z-index: 1;
 }
 
@@ -260,8 +270,8 @@ h2 span{
 
 .signature {
     position: absolute;
-    bottom: 60px;
-    left: 30px;
+    bottom: 55px;
+    left: 40px;
     color: #333;
     font-style: italic;
 }
