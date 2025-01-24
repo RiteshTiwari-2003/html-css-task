@@ -14,13 +14,15 @@ body {
 .container {
     width: 100%;
     max-width: 100%;
-    margin: 0;
+    
     padding: 0;
 }
 
 h1 {
     text-align: center;
     color: #333;
+    margin-left:10px;
+    margin-right: 10px;
     margin-bottom: 30px;
     background-color: red;
     border: solid 10px black;
@@ -32,6 +34,9 @@ h1 {
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
     gap: 15px;
+    margin-left: 10px;
+    margin-right:10px;
+    
 }
 
 .gallery-item {
